@@ -4,8 +4,14 @@
     "dockerfile": "Dockerfile"
   },
   "remoteUser": "vscode",
+  "containerEnv": {
+    "JAVA_HOME": "/usr/lib/jvm/msopenjdk-current"
+  },
   "customizations": {
     "vscode": {
+      "settings": {
+        "java.import.gradle.java.home": "/usr/lib/jvm/msopenjdk-current"
+      },
       "extensions": [
         "vscjava.vscode-java-pack",
         "vscjava.vscode-gradle"
